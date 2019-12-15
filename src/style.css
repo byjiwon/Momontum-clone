@@ -1,0 +1,160 @@
+@import "./reset.css";
+
+body {
+  color: #f3f4f4;
+  height: 850px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+a:visited,
+a:link {
+  text-decoration: none;
+  color: #f3f4f4;
+}
+
+header {
+  padding-top: 10px;
+}
+
+.outline {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  color: #f3f4f4;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__column {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav__contents {
+  padding: 0px 10px;
+}
+
+.logo {
+  border-radius: 50%;
+}
+
+main {
+  position: absolute;
+  top: 12%;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__column {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__column:nth-child(2) {
+  position: absolute;
+  bottom: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 150px;
+  font-weight: bold;
+}
+
+input {
+  font-size: 50px;
+  color: white;
+  outline: none;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  border-bottom: 2px solid #ffffff;
+  background-color: transparent;
+}
+
+input::placeholder {
+  color: #ffffff;
+  text-align: center;
+  opacity: 0.8;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+button {
+  margin-top: 10px;
+  background-color: #f3f4f4;
+  color: black;
+  height: 80px;
+}
+
+.none {
+  display: none;
+}
+
+.daily {
+  animation: fadein 2s ease-in-out infinite;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.js-toDoList {
+  position: relative;
+  width: 30%;
+}
+
+li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: square;
+}
+
+li button {
+  height: 20px;
+}

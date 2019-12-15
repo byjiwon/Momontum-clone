@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link href="./src/style.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/dc6f37751e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="outline">
+      <header class="nav">
+        <div class="nav__column">
+          <a href="#" class="nav__btn">
+            <img
+              src="./src/1.png"
+              alt=""
+              class="logo"
+              height="50px"
+              width="50px"
+          /></a>
+          <a href="#" class="nav__btn">
+            <h6 class="nav__contents">Plus</h6>
+          </a>
+          <a href="#" class="nav__btn">
+            <h6 class="nav__contents">About</h6>
+          </a>
+          <a href="#" class="nav__btn">
+            <h6 class="nav__contents">Blog</h6>
+          </a>
+        </div>
+        <div class="nav__column">
+          <i class="nav__contents fab fa-chrome"> Chrome</i>
+          <i class="nav__contents fab fa-firefox"> Firefox</i>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main__column">
+          <div class="js-clock">
+            <h1>00:00</h1>
+          </div>
+          <form class="js-form">
+            <input id="askName" type="text" placeholder="What is your name?" />
+          </form>
+          <h4 class="js-greeting none"></h4>
+          <form class="js-toDoForm none">
+            <input type="text" placeholder="write a to do" />
+          </form>
+        </div>
+        <ul class="js-toDoList"></ul>
+        <div class="main__column">
+          <h4 class="introduce">
+            Daily <span class="daily"></span> on your new tab page
+          </h4>
+          <button class="add-btn">
+            <h4 class="btn-name">
+              + Add Momontom to Chrome
+            </h4>
+          </button>
+        </div>
+      </main>
+      <footer class="nav">
+        <h6 class="js-weather nav__contents">Source Unknown</h6>
+        <div class="nav__column">
+          <h6 class="nav__contents"></h6>
+          <h6 class="nav__contents">Gift</h6>
+          <h6 class="nav__contents">Help</h6>
+          <h6 class="nav__contents">Contact</h6>
+          <h6 class="nav__contents">Privacy</h6>
+          <i class="nav__contents fab fa-facebook-f"></i>
+          <i class="nav__contents fab fa-twitter"></i>
+          <i class="nav__contents fab fa-instagram"></i>
+        </div>
+      </footer>
+      <script src="./src/clock.js"></script>
+      <script src="./src/weather.js"></script>
+      <script src="./src/greetings.js"></script>
+      <script src="./src/main.js"></script>
+      <script src="./src/bg.js"></script>
+      <script src="./src/todolist.js"></script>
+    </div>
+  </body>
+</html>
